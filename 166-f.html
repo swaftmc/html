@@ -119,7 +119,8 @@
           }
           return parts.length ? URL.createObjectURL(new Blob(parts, { type: mime })) : null;
         }
-        config.dataUrl = await rtAssemble(RESC + "Build.data", "application/octet-stream");
+                /* rt-parts: Build.data Build.wasm */
+config.dataUrl = await rtAssemble(RESC + "Build.data", "application/octet-stream");
         config.codeUrl = await rtAssemble(RESC + "Build.wasm", "application/wasm");
         var script = document.createElement("script");
       script.src = loaderUrl;
