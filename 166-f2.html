@@ -133,6 +133,7 @@ config.dataUrl = await rtAssemble(RESC + "Build.data", "application/octet-stream
           alert(message);
         });
       };
+      document.body.appendChild(script);
       })();
             function resizeCanvas() {
                 canvas.height = window.innerHeight;
@@ -140,7 +141,6 @@ config.dataUrl = await rtAssemble(RESC + "Build.data", "application/octet-stream
                 setTimeout(resizeCanvas, 1000);
             }
             resizeCanvas();
-      document.body.appendChild(script);
 
     </script>
   <div id="sidebarad1">
